@@ -1,0 +1,70 @@
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+* {
+    font-family: sans-serif;
+    color: #000000;
+}
+
+
+html, body {
+    height: 100%;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    color: #f00a0a;
+}
+
+#questions,
+#final,
+#highscores,
+#yaynay {
+    display: none;  
+  } 
+
+ul.nobullets {
+list-style-type: none;
+}
+
+.ansBtn,
+.ansBtn:hover,
+.ansBtn:active,
+.ansBtn:focus,
+.ansBtn:active:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: #c5f579;
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: rgb(223, 133, 60);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/food-quiz-1643128269.jpg?crop=0.668xw:1.00xh;0.299xw,0&resize=1200:*);
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(https://www.investintech.com/resources/blog/wp-content/uploads/2021/09/Tech-Quiz-Test-Your-Knowledge-While-Having-Fun.jpg);
+   }
+}
